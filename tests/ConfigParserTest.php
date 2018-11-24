@@ -30,7 +30,7 @@ class ConfigParserTest extends TestCase
     {
         $this->cfg = new ConfigParser();
         $this->cfgNoSct = new NoSectionsConfigParser();
-        $this->fixturesDir = __DIR__.'/Fixtures';
+        $this->fixturesDir = __DIR__.'/fixtures';
         $this->filenames = array($this->fixturesDir.'/source.cfg');
         $this->outputFilename = tempnam(sys_get_temp_dir(), str_replace('\\', '_',__CLASS__).'_');
     }

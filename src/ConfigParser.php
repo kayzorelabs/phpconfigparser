@@ -362,7 +362,8 @@ class ConfigParser extends BaseConfigParser implements ConfigParserInterface
             $output .= sprintf("[%s]%s", $section, $this->settings->get('linebreak'));
             // and then all options in this section
             foreach ($this->_sections[$section] as $key => $value) {
-                $output .= $this->_buildOptionValueLine($key, $value);
+                $optionValue = $this->_buildOptionValueLine($key, $value);
+                $output .= "\"$optionValue\"";
             }
             $output .= $this->settings->get('linebreak');
         }

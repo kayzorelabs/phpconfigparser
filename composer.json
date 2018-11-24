@@ -1,12 +1,16 @@
 {
     "name": "kayzorelabs/phpconfigparser",
     "type": "library",
-    "description": "A configuration file parser for PHP 7.2",
-    "keywords": ["kayzorelabs", "configparser", "config", "parser"],
+    "description": "A configuration file parser for PHP 7.1 and up",
+    "keywords": ["noiselabs", "kayzorelabs", "configparser", "config", "parser"],
     "homepage": "https://github.com/kayzorelabs/phpconfigparser",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "license": "LGPL-3.0",
     "authors": [
+        {
+            "name": "Vítor Brandão",
+            "email": "noisebleed@noiselabs.org"
+        },
         {
             "name": "Kayzore Labs",
             "email": "kayzorelabs@gmail.com"
@@ -17,9 +21,6 @@
     },
     "require": {
         "php": ">=7.1"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "7.5.x-dev"
     },
     "autoload": {
         "psr-4": {

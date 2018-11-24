@@ -191,7 +191,7 @@ class NoSectionsConfigParser extends BaseConfigParser implements NoSectionsConfi
                 $line .= ' ';
             }
             // and finally, option value
-            $line .= $value;
+            $line .= "\"$value\"";
             // record it for eternity
             $output .= $line.$this->settings->get('linebreak');
         }

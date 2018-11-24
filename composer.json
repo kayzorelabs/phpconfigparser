@@ -1,0 +1,35 @@
+{
+    "name": "kayzorelabs/phpconfigparser",
+    "type": "library",
+    "description": "A configuration file parser for PHP 7.2",
+    "keywords": ["kayzorelabs", "configparser", "config", "parser"],
+    "homepage": "https://github.com/kayzorelabs/phpconfigparser",
+    "version": "0.1.0",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Kayzore Labs",
+            "email": "kayzorelabs@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/kayzorelabs/phpconfigparser/issues"
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.5.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "KayzoreLabs\\ToolKit\\ConfigParser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KayzoreLabs\\ToolKit\\ConfigParser\\Test\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}

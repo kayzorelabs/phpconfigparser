@@ -1,0 +1,15 @@
+language: php
+
+php:
+    - 7.1
+    - 7.2
+
+before_script:
+    - curl -s http://getcomposer.org/installer | php -- --quiet
+    - php composer.phar install
+
+script: phpunit
+
+notifications:
+    email:
+        - kayzorelabs@gmail.com

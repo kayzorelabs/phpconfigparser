@@ -441,6 +441,8 @@ abstract class BaseConfigParser implements \ArrayAccess, \IteratorAggregate, \Co
             if ($count == 0) {
                 $lines[$k] = preg_replace('/([^:])(:)/', '${1} =', $lines[$k], 1, $count);
             }
+
+            $lines[$k] = str_replace("\"", "", $lines[$k]);
         }
 
         return implode("\n", $lines);
